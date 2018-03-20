@@ -1,0 +1,255 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Programmas virsraksts</title>
+
+		<!--kautkas priekš ajax -->
+		<script src="/assets/todo-list.js"></script>
+
+		<!--bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="navbar-nav-scroll">
+	   	<ul class="navbar-nav bd-navbar-nav flex-row">
+		    <li id ="logotajs" class="nav-item g-signin2" data-onsuccess="onSignIn"></li>
+		    <li class="nav-item"><p class="navbar-brand" style="  margin:0em 0em 0em 1em; font-size:0.7em;" id="logins"> Pieraksties, lai lietotu</p></li>
+		    <li class="nav-item"><a style="padding:0px 25px" href="#" onclick="signOut();">Atslēgties</a></li>
+	    </ul>    
+ 	</div>
+
+ 	<div  style="transform: translateX(-50%); left: 50%; position: absolute; margin-top: 10px;">LIDO</div>
+ 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span> 
+	</button>
+ 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+  		<ul class="navbar-nav flex-row ml-md-auto d-md-flex" style="font-size:2em; color:Tomato; padding-right: 25px;">
+ 
+		    <li class="nav-item ">
+		  		<i class="fas fa-beer" title="apkopojums"></i>
+		    </li>
+		    <li class="nav-item ">
+		     	<i class="fas fa-bug " title="pamâcîba" onclick="pamacibaLogs()"></i>
+		    </li>
+		    <li class="nav-item ">
+		    	<i class="fas fa-cog" title="iestatîjumi" onclick="setingLogs()"></i>
+		    </li>
+	  	</ul>
+  	</div>
+</header>
+
+<div class="container row" id="todo-table" style="margin:0px; padding:0px;">
+
+<div  class=" col-sm-0 col-md-3"></div>
+
+<div style= "background-color:#f4f4f4" class="col-sm-12 col-md-9">
+	<form style="display:none;" method="post">
+		<div class="form-row">
+			<div class="form-group col-sm-8">
+				<input type="text"  class="form-control" name="item" placeholder="add new text" required />
+			</div>
+			<div class="form-group col-sm-4">
+				<button type="submit" class="btn btn-primary mb-2">Add item</button>
+			</div>
+		</div>
+	</form>
+
+<ul style="list-style-type:none; padding-left:5px;">
+
+<% for(var i=0; i < todos.length; i++){ %>
+<li id="uncompletedotraPoga<%= i+1 %>" style="display:list-item;">
+	<form style="margin-bottom: 0px;">	
+		<div class="form-group row justify-content-between" style="margin-bottom: 0px;">
+			<div style="background-color: #fff; margin-bottom: 0px;" class=" border rounded col-sm-12">
+				<div style="margin-bottom: 0px;" class="form-group row">
+					<div class=" col-8 col-form-label">
+					<label for="text" style="margin-bottom: 0px" ><%= todos[i].item %></label><br>
+					<small for="text"><%= todos[i].name %></small></div>
+					<div style="padding: 10px 5px 0px 0px; margin-bottom: 0px;" class="col-3">
+						<button style=" padding: 2px;" onclick="myFunction(this)" id="prmaPoga<%= i+1 %>" type="button" class="btn btn-warning">____</button>
+					</div>
+					<div style="padding: 10px 5px 0px 0px; margin-bottom: 0px;" class="col-1">
+						<button style=" padding: 2px;" onclick="tavaFun(this)" id="otraPoga<%= i+1 %>" type="button" class="btn poga ">ok?</button>
+					</div>
+				</div>
+				<div class="form-group row AttprmaPoga<%= i+1 %>" style="display:none;">
+					<div class="col-4">
+						<button onclick="openWin()"  type="button" class=" btn-sm btn-primary">Aizpildīt formu</button>
+					</div>
+					<div  class="col-8 border">
+						<input type="text" class="form-control-plaintext rounded" id="staticText" value="Ierakstiet komentāru">
+					</div>
+						<small for="text" class=" col-12 ">Ierakstīt attiecīgā darbinieka vērtējuma lapā</small>
+				</div>
+			</div>
+		</div>
+	</form>
+</li>
+	<% } %>
+</ul>
+<hr>
+
+<ul style="list-style-type:none; padding-left:5px;">
+
+<% for(var i=0; i < todos.length; i++){ %>
+<li style="display:none" id="completedotraPoga<%= i+1 %>">
+	<form style="margin-bottom: 0px;">	
+		<div class="form-group row justify-content-between" style="margin-bottom: 0px; background-color: #b8b8c0">
+			<div style="background-color: #b8b8c0; margin-bottom: 0px;" class=" border rounded col-sm-12">
+				<div style="margin-bottom: 0px;" class="form-group row">
+					<div class=" col-8 col-form-label">
+					<label for="text" style="margin-bottom: 0px" ><%= todos[i].item %></label><br>
+					<small for="text"><%= todos[i].name %></small></div>
+					<div style="padding: 10px 5px 0px 0px; margin-bottom: 0px;" class="col-3">
+						<button style=" padding: 2px;" onclick="myFunction(this)" id="iprmaPoga<%= i+1 %>" type="button" class="btn btn-warning">____</button>
+					</div>
+					<div style="padding: 10px 5px 0px 0px; margin-bottom: 0px;" class="col-1">
+						<button style=" padding: 2px;" onclick="tavaFun2(this)" id="otraPoga<%= i+1 %>" type="button" class="btn poga ">ok?</button>
+					</div>
+				</div>
+				<div class="form-group row AttprmaPoga<%= i+1 %>" style="display:none;">
+					<div class="col-4">
+						<button onclick="openWin()"  type="button" class=" btn-sm btn-primary">Aizpildīt formu</button>
+					</div>
+					<div  class="col-8 border">
+						<input type="text" class="form-control-plaintext rounded" id="staticText" value="Ierakstiet komentāru">
+					</div>
+						<small for="text" class=" col-12 ">Ierakstīt attiecīgā darbinieka vērtējuma lapā</small>
+				</div>
+			</div>
+		</div>
+	</form>
+</li>
+	<% } %>
+</ul>
+
+<footer> 
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>﻿
+
+    <!--Oauth-->
+      <script>
+                   function onSignIn(googleUser) {
+              var profile = googleUser.getBasicProfile();
+              console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+              console.log('Name: ' + profile.getName());
+              console.log('Image URL: ' + profile.getImageUrl());
+              console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+              
+               document.getElementById('logins').innerHTML = profile.getName() +',  '+ profile.getEmail();
+                }
+                
+                function openWin() {
+                     window.open("https://docs.google.com/a/lido.lv/forms/d/e/1FAIpQLSejR5Vmp7_kji-XWwe2GyoXMKmZs5EZVFpo89-G3Dxzyj2TFg/viewform");
+            }
+            
+            function setingLogs () {
+                  var myWindow = window.open ("http://quality.lido.lv/page/iestatijumi?",
+                    "mywindow","menubar=0,resizable=0,width=400px,height=300px");
+                    myWindow.document.write('<html><head></head><body><p>Ierakstiet darba laiku</p></body></html>');
+            }
+            
+            function pamacibaLogs(){
+                alert("ðeit ievietot pamâcîbu kâ lietot");
+            
+            }
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+        <script type="text/javascript" defer="true" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> 
+  		
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://apis.google.com/js/platform.js" async="true" defer="true"></script>
+        <meta name="google-signin-client_id" content="332575249702-um75alajj91a9dji32pi7ddugakvgobj.apps.googleusercontent.com"></meta>
+            
+        <script>
+              function signOut() {
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function () {
+                  console.log('User signed out.');
+                });
+                 document.getElementById('logins').innerHTML = 'Izlogojies';
+              }
+        </script>
+
+          <script>
+          //custom scripts pogu krāsu mainīšanai
+         function myFunction(ele){
+    var id = ele.id;
+    var idi = 'i'+id;
+    var idia = idi + 'area'
+    var class1 = ele.className;
+         console.log(class1); 
+    console.log('area element id = ' + id + 'area element class = ' + class1);
+  if (class1 == "btn btn-success") {
+                 document.getElementById(id).className = 'btn btn-danger';
+                 document.getElementById(id).innerHTML = 'Neatbilst';
+                 document.getElementById(idi).className = 'btn btn-danger';
+                 document.getElementById(idi).innerHTML = 'Neatbilst';
+               var  x = document.getElementsByClassName("Att"+id);
+               console.log(x);
+               x[0].style.display = 'flex';
+               
+                 }
+                 
+                 else if ( class1 == "btn btn-warning" || class1 == "btn btn-danger"){
+                 document.getElementById(idi).className = 'btn btn-success';
+                 document.getElementById(idi).innerHTML = 'Atbilst';
+                 document.getElementById(id).className = 'btn btn-success';
+                 document.getElementById(id).innerHTML = 'Atbilst';
+                  var  y = document.getElementsByClassName("Att"+id);
+               console.log(y);
+               y[0].style.display = 'none';
+                 }
+                 }
+
+             </script>
+
+             <script>
+function tava(ele){
+
+var id = ele.id;
+var idComplete = 'completed'+id;
+var idUncomplete = 'uncompleted'+id;
+ console.log(idComplete);
+   
+                </script>
+                <script type="text/javascript">
+                	
+function tavaFun(ele){
+
+var id = ele.id;
+id2 = 'prmaPoga' + id.substring(8);
+iid2 = 'i' + id2;
+var idComplete = 'completed'+id;
+var idUncomplete = 'uncompleted'+id;
+ console.log(id2);
+ document.getElementById(idComplete).style.display="list-item";
+ document.getElementById(idUncomplete).style.display="none";
+ console.log(id2);
+ document.getElementById(iid2).disabled = true;
+
+}
+function tavaFun2(ele){
+
+var id = ele.id;
+id2 = 'prmaPoga' + id.substring(8);
+var idComplete = 'completed'+id;
+var idUncomplete = 'uncompleted'+id;
+ console.log(idComplete);
+ document.getElementById(idUncomplete).style.display="list-item";
+ document.getElementById(idComplete).style.display="none";
+ document.getElementById(id2).disabled = false;
+}
+                </script>
+    </footer>
+	</body>
+</html>		 
