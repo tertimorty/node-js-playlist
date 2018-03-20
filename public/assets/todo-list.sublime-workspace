@@ -1,0 +1,491 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"idComplete"
+			],
+			[
+				"i",
+				"list-item"
+			],
+			[
+				"navbar",
+				"navbar-expand-lg"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"t",
+				"text"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"bo",
+				"Body"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"bod",
+				"bodyParser"
+			],
+			[
+				"backgroud",
+				"background-color"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"inner",
+				"innerHeight"
+			],
+			[
+				"client",
+				"clientY"
+			],
+			[
+				"onc",
+				"onclick"
+			],
+			[
+				"le",
+				"lenght"
+			],
+			[
+				"f",
+				"fill"
+			],
+			[
+				"fi",
+				"fillStyle"
+			],
+			[
+				"str",
+				"strokeStyle"
+			],
+			[
+				"mouse",
+				"mouseDown"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde-top",
+				"border-top-right-radius"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"si",
+				"siteUrl"
+			],
+			[
+				"sit",
+				"siteName"
+			],
+			[
+				"vali",
+				"validateForm"
+			],
+			[
+				"site",
+				"siteUrl"
+			],
+			[
+				"book",
+				"bookmarks"
+			],
+			[
+				"boo",
+				"bookmarks"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"get",
+				"getElementById"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/todo.ejs",
+			"settings":
+			{
+				"buffer_size": 11379,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/app.js",
+			"settings":
+			{
+				"buffer_size": 577,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/controlers/todocontrollers.js",
+			"settings":
+			{
+				"buffer_size": 1159,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/controlers",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/public",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/public/assets",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/views",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/partials"
+	],
+	"file_history":
+	[
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/partials/footer.ejs",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/partials/header.ejs",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/public/assets/todo-list.js",
+		"/C/Users/kaspa/Desktop/Nodep/views/partials/footer.ejs",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/head.ejs",
+		"/C/Users/kaspa/Desktop/Nodep/views/partials/header.ejs",
+		"/C/Users/kaspa/Desktop/Nodep/views/index.ejs",
+		"/C/Users/kaspa/Desktop/Nodep/skripti.js",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/public/app.js",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/app.js",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/README.md",
+		"/C/Users/kaspa/Desktop/myApp/node-js-playlist/package.json",
+		"/C/Users/kaspa/Desktop/Nodep/package.json",
+		"/C/Users/kaspa/Documents/loggers/logers.html",
+		"/C/Users/kaspa/Documents/kvalitates_majaslapa/index.html",
+		"/C/Users/kaspa/nodeProjekti/index.html",
+		"/C/Users/kaspa/nodeProjekti/myfirst.js",
+		"/C/Users/kaspa/Desktop/izmeginajums.html",
+		"/C/nodeProjekti/myfirst.js",
+		"/C/Users/kaspa/Documents/programmēšana/aplishi/Aplishi_gravitacija.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi/aplitis1.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi/aplishi1.js",
+		"/C/Users/kaspa/Documents/programmēšana/aplishi/aplishi_neon1.html",
+		"/C/Users/kaspa/Documents/JavaScript/canvas-boilerplate-master/canvas-boilerplate-master/dist/js/canvas.bundle.js",
+		"/C/Users/kaspa/Documents/JavaScript/canvas-boilerplate-master/canvas-boilerplate-master/dist/index.html",
+		"/C/Users/kaspa/Desktop/New folder/index.html",
+		"/C/Users/kaspa/Documents/JavaScript/canvas-boilerplate-master/canvas-boilerplate-master/src/canvas.js",
+		"/C/Users/kaspa/Documents/programmēšana/aplishi/aplishi_neon.js",
+		"/C/Users/kaspa/Documents/programmēšana/aplishi/aplishi_gravitacija.js",
+		"/C/Users/kaspa/Documents/JavaScript/canvas-boilerplate-master/canvas-boilerplate-master/dist/canvas.js",
+		"/C/Users/kaspa/Desktop/tristuris/izmeginajums.html",
+		"/C/Users/kaspa/Documents/programmēšana/aplishi/aplishi_izm.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi/aplitis.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi/aplishi2.js",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi/aplishi.js",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi_gravitacija/Aplishi_gravitacija.html",
+		"/C/Users/kaspa/Desktop/stils.css",
+		"/C/Users/kaspa/Documents/JavaScript/snake/snake2.js",
+		"/C/Users/kaspa/Documents/JavaScript/example1.js",
+		"/C/Users/kaspa/Documents/JavaScript/example.js",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi_gravitacija/aplishi_gravitacija.js",
+		"/C/Users/kaspa/Desktop/bootstrap 4 izmeginajums/index.html",
+		"/C/Users/kaspa/Desktop/aplishi/aplishi_neon.js",
+		"/C/Users/kaspa/Desktop/aplishi/aplishi_izm.html",
+		"/C/Users/kaspa/Desktop/aplishi/aplishi_neon1.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi_gravitacija/aplishi_neon.html",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi_gravitacija/aplishi_neon.js",
+		"/C/Users/kaspa/Documents/JavaScript/pong2/pong2.js",
+		"/C/Users/kaspa/Documents/JavaScript/pong/pong1.html",
+		"/C/Users/kaspa/Desktop/kopa_lapa.html",
+		"/C/Users/kaspa/Desktop/bumba kā objects/hh.js",
+		"/C/Users/kaspa/Desktop/hh.html",
+		"/C/Users/kaspa/Desktop/hh.js",
+		"/C/Users/kaspa/Documents/JavaScript/snake/snake.js",
+		"/C/Users/kaspa/Documents/JavaScript/snake/snake1.js",
+		"/C/Users/kaspa/Documents/JavaScript/Aplishi_gravitacija/aplishi_gravitacija.css",
+		"/C/Users/kaspa/Desktop/aplitis.html",
+		"/C/Users/kaspa/Desktop/aplishi.js",
+		"/C/Users/kaspa/Documents/JavaScript/toDo-App/index.html",
+		"/C/Users/kaspa/Documents/JavaScript/toDo-App/Resources/CSS/reset.css",
+		"/C/Users/kaspa/Documents/JavaScript/snake/snake.html",
+		"/C/Users/kaspa/Documents/JavaScript/toDo-App/Resources/CSS/style.css",
+		"/C/Users/kaspa/Documents/JavaScript/Bookmark_Aplikācija/index.html",
+		"/C/Users/kaspa/Documents/JavaScript/Bookmark_Aplikācija/js/main.js",
+		"/C/Users/kaspa/Documents/JavaScript/pong2/pong2.html",
+		"/C/Users/kaspa/Documents/JavaScript/Bookmark_Aplikācija/css/style.css",
+		"/C/Users/kaspa/Documents/JavaScript/pong/pong.html",
+		"/C/Users/kaspa/Desktop/snake/snake1.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";\">",
+			"5px"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/views/todo.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2692,
+								2692
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								577,
+								577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/kaspa/Desktop/myApp/node-js-playlist/controlers/todocontrollers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "todo-list.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
